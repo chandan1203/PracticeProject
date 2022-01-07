@@ -21,6 +21,8 @@ Route::get('/', [TestController::class, 'index']);
 Route::get('/post-comment/{id}', [TestController::class, 'PostComment']);
 Route::get('/video-comment/{id}', [TestController::class, 'VideoComment']);
 
+Route::get('/project', [TestController::class, 'project']);
+
 Route::get('/facades', function(){
 
     class Fish{
